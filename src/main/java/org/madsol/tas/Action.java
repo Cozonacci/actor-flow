@@ -1,23 +1,16 @@
 package org.madsol.tas;
 
-public class Action {
+import lombok.Data;
+import lombok.NonNull;
 
+@Data
+public class Action implements Performable {
+
+    @NonNull
     private final String name;
 
-    public Action(final String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
+    @Override
     public void performedBy(final Actor actor) {
         System.out.println(String.format("[%s performed by %s]", this, actor));
-    }
-
-    @Override
-    public String toString() {
-        return String.format("Action(name='%s')", name);
     }
 }
