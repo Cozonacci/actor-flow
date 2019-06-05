@@ -10,6 +10,6 @@ public class Actor {
     private final String id;
 
     public void performs(final Performable performable){
-        performable.performedBy(this);
+        new ExecutionContext(this, performable).run();
     }
 }

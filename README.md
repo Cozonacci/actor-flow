@@ -18,3 +18,7 @@ Entities of the _Flow Model_:
 - **Flow**: is a group of tasks which performed with solve a business problem (i.e. business capability of the system) 
 - **Role**: is a restrictive attribute of SUT access in order to perform a given action
 - **Completion Check**: represents a post-condition that verifies a given actions was successfully applied
+
+Design Patterns applied:
+- chain of responsibilities
+- command
