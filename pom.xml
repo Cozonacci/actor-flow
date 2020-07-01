@@ -13,7 +13,7 @@
         <junit.version>4.12</junit.version>
         <cucumber.version>1.2.5</cucumber.version>
         <lombok.version>1.18.8</lombok.version>
-        <log4j2.version>2.11.2</log4j2.version>
+        <log4j2.version>2.13.3</log4j2.version>
     </properties>
 
     <dependencies>
